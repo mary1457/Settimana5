@@ -1,0 +1,568 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    color: #612406;
+    display: flex;
+}
+
+header {
+    flex: 1 0 20%;
+    background-color: #FBF7E3;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+main {
+    flex: 1 0 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#cardcontainer {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.titoli {
+    flex: 1 0 60%;
+}
+
+.sottotitolo {
+    flex: 1 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottone {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottone button {
+    width: 60%;
+    height: 30px;
+    background-color: #F3DF85;
+    padding: 10px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 70px;
+    overflow: hidden;
+    background-color: #FBF7E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section img {
+    width: 100%;
+    height: 60%;
+}
+
+#lista {
+    width: 100%;
+    height: 70%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lista li {
+    width: 60%;
+    height: 60px;
+    background-color: #F3DF85;
+    padding: 10px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    background-color: #FBF7E3;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.titolifinali {
+    flex: 1 0 40%;
+    order: 2;
+    margin-left: 10px;
+}
+
+.imgfinale {
+    flex: 1 0 50%;
+    order: 1;
+}
+
+.imgfinale img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:320px) and (max-width:575px) {
+    body {
+        color: #612406;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex: 1 0 100%;
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    main {
+        flex: 1 0 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #card {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 450px;
+    }
+
+    #cardcontainer {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .titoli {
+        flex: 1 0 60%;
+    }
+
+    .sottotitolo {
+        flex: 1 0 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone {
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone button {
+        width: 70%;
+        height: 30px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 70px;
+        overflow: hidden;
+        background-color: #FBF7E3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 45%;
+    }
+
+    section img {
+        width: 100%;
+        height: 60%;
+    }
+
+    #lista {
+        width: 100%;
+        height: 70%;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #lista li {
+        width: 90%;
+        height: 60px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        background-color: #FBF7E3;
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .titolifinali {
+        flex: 1 0 0;
+        order: 1;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .imgfinale {
+        flex: 1 0 0;
+        order: 2;
+    }
+
+    .imgfinale img {
+        width: 100%;
+        height: 100%;
+    }
+    #cardtolta {display: none;}
+
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    body {
+        color: #612406;
+        display: flex;
+    }
+
+    header {
+        flex: 1 0 20%;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    main {
+        flex: 1 0 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #card {
+        width: 50%;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 130px;
+    }
+
+    #cardcontainer {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .titoli {
+        flex: 1 0 60%;
+    }
+
+    .sottotitolo {
+        flex: 1 0 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone {
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone button {
+        width: 70%;
+        height: 30px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 70px;
+        overflow: hidden;
+        background-color: #FBF7E3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section img {
+        width: 100%;
+        height: 60%;
+    }
+
+    #lista {
+        width: 100%;
+        height: 70%;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #lista li {
+        width: 90%;
+        height: 60px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 50%;
+        background-color: #FBF7E3;
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .titolifinali {
+        flex: 1 0 0;
+        order: 1;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .imgfinale {
+        flex: 1 0 0;
+        order: 2;
+    }
+
+    .imgfinale img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    body {
+        color: #612406;
+        display: flex;
+    }
+
+    header {
+        flex: 1 0 15%;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    main {
+        flex: 1 0 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #card {
+        width: 50%;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 130px;
+    }
+
+    #cardcontainer {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .titoli {
+        flex: 1 0 60%;
+    }
+
+    .sottotitolo {
+        flex: 1 0 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone {
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottone button {
+        width: 70%;
+        height: 30px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 70px;
+        overflow: hidden;
+        background-color: #FBF7E3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section img {
+        width: 100%;
+        height: 60%;
+    }
+
+    #lista {
+        width: 100%;
+        height: 70%;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #lista li {
+        width: 90%;
+        height: 60px;
+        background-color: #F3DF85;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 50%;
+        background-color: #FBF7E3;
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .titolifinali {
+        flex: 1 0 0;
+        order: 1;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .imgfinale {
+        flex: 1 0 0;
+        order: 2;
+    }
+
+    .imgfinale img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
